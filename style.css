@@ -2,9 +2,9 @@ body {
     color: azure;
     background-color: steelblue;
     font-family: sans-serif;
-    background-image: url("/img/c.svg");
+    /* background-image: url("/img/c.svg");
     background-repeat: repeat;
-    background-size: 24em;
+    background-size: 24em; */
     text-align: center;
 }
 a {
