@@ -8,7 +8,7 @@ body {
     background-size: 24em; */
 }
 h1 {
-    margin-left: 1em;
+    margin: 0.5em 1em;
 }
 .container {
     display: flex;
