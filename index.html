@@ -5,117 +5,83 @@
         <meta name="viewport" content="width=device-width"/>
         <link rel="icon" type="img" href="img/favicon@1080.png"/>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="dns-prefetch" href="//nyan-ds920p.nyanyan.net"/>
         <title>喵喵！</title>
-        <style type="text/css">
-            body {
-                color: azure;
-                background-color: steelblue;
-                font-family: sans-serif;
-                /* background-image: url("/img/c.svg");
-                background-repeat: repeat;
-                background-size: 24em; */
-                text-align: center;
-            }
-            h1 {
-                margin-left: 1em;
-            }
-            .nav{
-                background-color: #fff8dc1f;
-                margin: -0.5em 0 -0.5em 0;
-                padding: 0.5em;
-                font-size: large;
-            }
-            .nav ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-            .nav ul li{
-                margin: 1em;
-            }
-            .smalllink{
-                height: 0.5em;
-                font-size: small;
-            }
-            .footer {
-                text-align: center;
-                font-size: smaller;
-                color: lightblue;
-                line-height: 0.5em;
-            }
-
-            #toggle_frame {
-                display: none;
-                align-content: center;
-            }
-            #toggle_frame_i {
-                display: block;
-            }
-            #toggle {
-                display: none;
-            }
-            #toggle:checked ~ #toggle_frame {
-                display: block;
-            }
-            #toggle:checked ~ #toggle_frame_i {
-                display: none;
-            }
-            #video {
-                max-width: 960px;
-            }
-            img.logo{
-                height: 8em;
-                vertical-align: middle;
-            }
-            img.siteicon{
-                height: 1em;
-                vertical-align: middle;
-            }
-        </style>
     </head>
     <body>
-        <div class="header">
-            <a href="https://www.nyanyan.net">
-                <img class="logo" src="img/logo.svg" title="喵喵！"/>
-            </a>
-        </div>
-        <hr/>
-        <div class="nav">
-            <ul>
-                <li>
-                    <a href="https://osu.ppy.sh/users/2382751">
-                        <img class="siteicon" src="img/favicon-32x32.osu.png" title="osu!"/>
-                        osu!
+        <div class="container">
+            <div class="sidebar">
+                <div class="logo">
+                    <a href="https://www.nyanyan.net">
+                        <img class="logo-img" src="img/nyan.svg" title="喵喵！"/>
                     </a>
-                </li>
-                <li>
-                    <a href="https://live.bilibili.com/65774">
-                        <img class="siteicon" src="img/favicon.bilibili.ico" title="哔哩哔哩直播间"/>
-                        哔哩哔哩直播间
-                    </a>
-                </li>
-                <li>
-                    <a href="https://synodrive.nyanyan.net">
-                        <img class="siteicon" src="img/entry.png" title="Synology Drive"/>
-                        Synology Drive
-                    </a>
-                </li>
-                <li>
-                    <a href="ts3server://ts.nyanyan.net?channel=%E5%92%95%E5%92%95">
-                        <img class="siteicon" src="img/front-facing-baby-chick_1f425_1.png" title="TeamSpeak鸽子服"/>
-                        TeamSpeak鸽子服
-                    </a>
-                    <br/>
-                    <a class="smalllink" href="https://nyan-ds920p.quickconnect.cn/d/s/11WQHGFtDdOpwguIaSxOJpRWMcbubfPc/9Oo_WnY57xg7op1KKU7lK5lv0pLeyHx1-Gb4Aq6-OLAw">
-                        👉点我下载最新最热TeamSpeak客户端安装程序👈
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <hr/>
-        <div class="footer">
-            <p><a href="https://www.nyanyan.net">NyanNet Web Service</a></p>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="https://live.bilibili.com/65774">
+                                <img class="siteicon" src="img/favicon.bilibili.ico" title="哔哩哔哩直播"/>
+                                哔哩哔哩直播
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://live.bilibili.com/65774">
+                                <img class="siteicon" src="img/favicon.weibo.ico" title="新浪微博"/>
+                                新浪微博
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://osu.ppy.sh/users/2382751">
+                                <img class="siteicon" src="img/favicon-32x32.osu.png" title="osu!"/>
+                                osu!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://synodrive.nyanyan.net">
+                                <img class="siteicon" src="img/entry.png" title="Synology Drive"/>
+                                Synology Drive
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ts3server://ts.nyanyan.net?channel=%E5%92%95%E5%92%95">
+                                <img class="siteicon" src="img/front-facing-baby-chick_1f425_1.png" title="TeamSpeak服务器"/>
+                                TeamSpeak服务器
+                            </a>
+                            <!-- <a class="smalllink" href="https://nyan-ds920p.quickconnect.cn/d/s/11WQHGFtDdOpwguIaSxOJpRWMcbubfPc/9Oo_WnY57xg7op1KKU7lK5lv0pLeyHx1-Gb4Aq6-OLAw">
+                                👉点我下载客户端👈
+                            </a> -->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <main class="main">
+                    <div class="show-box">
+                        <a href="https://nyan-ds920p.quickconnect.cn/mo/sharing/67GH8QX7i" class="show-item">
+                            <div class="item-img">
+                                <img src="img/c02.jpg" title="猫02"/>
+                            </div>
+                            <div class="item-text">猫02</div>
+                        </a>
+                        <a href="https://nyan-ds920p.quickconnect.cn/mo/sharing/cu2JGyXDF" class="show-item">
+                            <div class="item-img">
+                                <img src="img/c03.jpg" title="猫03"/>
+                            </div>
+                            <div class="item-text">猫03</div>
+                        </a>
+                        <a href="https://nyan-ds920p.quickconnect.cn/mo/sharing/g7kr0Pr5M" class="show-item">
+                            <div class="item-img">
+                                <img src="img/c04.jpg" title="猫04"/>
+                            </div>
+                            <div class="item-text">猫04</div>
+                        </a>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <p><a href="https://www.nyanyan.net">NyanNet Web Service</a></p>
+                </footer>
+            </div>
         </div>
     </body>
 </html>

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: medium; */
+}
 a {
     color: gold;
     font-weight: bold;
