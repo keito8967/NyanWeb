@@ -64,7 +64,7 @@ h1 {
 }
 .main{
     padding: 1em;
-    min-height: calc(100vh - 3em);
+    min-height: calc(100vh - 48px);
 }
 .show-box {
     column-count: 3;
@@ -103,6 +103,7 @@ h1 {
 }
 .footer {
     padding: 1em;
+    height: 48px;
     text-align: center;
     font-size: smaller;
     color: lightblue;
